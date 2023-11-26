@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="mastermindbox">
+      <div class="mastermindbox-indi">
+        <div class="savedColors">
+          <div id="selectedcolorstitle">Colores</div>
+          <div id="selectedColor1"></div>
+          <div id="selectedColor2"></div>
+          <div id="selectedColor3"></div>
+          <div id="selectedColor4"></div>
+        </div>
+        <div class="buttoncheck" id="buttoncheck">Comprobar</div>
+      </div>
+      <div class="boxplayer">
+        <div class="gamemid">
+          <div class="boxverify">
+            <div class="number">1</div>
+          </div>
+          <div class="boxverify">
+            <div class="val box1">
+              <div class="itemCheck" id="cK1-1"></div>
+              <div class="itemCheck" id="cK1-2"></div>
+              <div class="itemCheck" id="cK1-3"></div>
+              <div class="itemCheck" id="cK1-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gamemid">
+          <div class="boxverify">
+            <div class="number">2</div>
+          </div>
+          <div class="boxverify">
+            <div class="val box2">
+              <div class="itemCheck" id="cK2-1"></div>
+              <div class="itemCheck" id="cK2-2"></div>
+              <div class="itemCheck" id="cK2-3"></div>
+              <div class="itemCheck" id="cK2-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gamemid">
+          <div class="boxverify">
+            <div class="number">3</div>
+          </div>
+          <div class="boxverify">
+            <div class="val box3">
+              <div class="itemCheck" id="cK3-1"></div>
+              <div class="itemCheck" id="cK3-2"></div>
+              <div class="itemCheck" id="cK3-3"></div>
+              <div class="itemCheck" id="cK3-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gamemid">
+          <div class="boxverify">
+            <div class="number">4</div>
+          </div>
+          <div class="boxverify">
+            <div class="val box4">
+              <div class="itemCheck" id="cK4-1"></div>
+              <div class="itemCheck" id="cK4-2"></div>
+              <div class="itemCheck" id="cK4-3"></div>
+              <div class="itemCheck" id="cK4-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gamemid">
+          <div class="boxverify">
+            <div class="number">5</div>
+          </div>
+          <div class="boxverify">
+            <div class="val box5">
+              <div class="itemCheck" id="cK5-1"></div>
+              <div class="itemCheck" id="cK5-2"></div>
+              <div class="itemCheck" id="cK5-3"></div>
+              <div class="itemCheck" id="cK5-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gamemid">
+          <div class="boxverify">
+            <div class="number">6</div>
+          </div>
+          <div class="boxverify">
+            <div class="val box6">
+              <div class="itemCheck" id="cK6-1"></div>
+              <div class="itemCheck" id="cK6-2"></div>
+              <div class="itemCheck" id="cK6-3"></div>
+              <div class="itemCheck" id="cK6-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gamemid">
+          <div class="boxverify">
+            <div class="number">7</div>
+          </div>
+          <div class="boxverify">
+            <div class="val box7">
+              <div class="itemCheck" id="cK7-1"></div>
+              <div class="itemCheck" id="cK7-2"></div>
+              <div class="itemCheck" id="cK7-3"></div>
+              <div class="itemCheck" id="cK7-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gamemid">
+          <div class="boxverify">
+            <div class="number">8</div>
+          </div>
+          <div class="boxverify">
+            <div class="val box8">
+              <div class="itemCheck" id="cK8-1"></div>
+              <div class="itemCheck" id="cK8-2"></div>
+              <div class="itemCheck" id="cK8-3"></div>
+              <div class="itemCheck" id="cK8-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gamemid">
+          <div class="boxverify">
+            <div class="number">9</div>
+          </div>
+          <div class="boxverify">
+            <div class="val box9">
+              <div class="itemCheck" id="cK9-1"></div>
+              <div class="itemCheck" id="cK9-2"></div>
+              <div class="itemCheck" id="cK9-3"></div>
+              <div class="itemCheck" id="cK9-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gamemid">
+          <div class="boxverify">
+            <div class="number">10</div>
+          </div>
+          <div class="boxverify">
+            <div class="val box10">
+              <div class="itemCheck" id="cK10-1"></div>
+              <div class="itemCheck" id="cK10-2"></div>
+              <div class="itemCheck" id="cK10-3"></div>
+              <div class="itemCheck" id="cK10-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gameright">
+          <div class="boxverifyright">
+            <div class="verifyrange">
+              <div id="range1c1" class="checkcolor range1c1"></div>
+              <div id="range1c2" class="checkcolor range1c2"></div>
+              <div id="range1c3" class="checkcolor range1c3"></div>
+              <div id="range1c4" class="checkcolor range1c4"></div>
+            </div>
+            <div class="verifyrange">
+              <div id="range2c1" class="checkcolor range2c1"></div>
+              <div id="range2c2" class="checkcolor range2c2"></div>
+              <div id="range2c3" class="checkcolor range2c3"></div>
+              <div id="range2c4" class="checkcolor range2c4"></div>
+            </div>
+            <div class="verifyrange">
+              <div id="range3c1" class="checkcolor range3c1"></div>
+              <div id="range3c2" class="checkcolor range3c2"></div>
+              <div id="range3c3" class="checkcolor range3c3"></div>
+              <div id="range3c4" class="checkcolor range3c4"></div>
+            </div>
+            <div class="verifyrange">
+              <div id="range4c1" class="checkcolor range4c1"></div>
+              <div id="range4c2" class="checkcolor range4c2"></div>
+              <div id="range4c3" class="checkcolor range4c3"></div>
+              <div id="range4c4" class="checkcolor range4c4"></div>
+            </div>
+            <div class="verifyrange">
+              <div id="range5c1" class="checkcolor range5c1"></div>
+              <div id="range5c2" class="checkcolor range5c2"></div>
+              <div id="range5c3" class="checkcolor range5c3"></div>
+              <div id="range5c4" class="checkcolor range5c4"></div>
+            </div>
+            <div class="verifyrange">
+              <div id="range6c1" class="checkcolor range6c1"></div>
+              <div id="range6c2" class="checkcolor range6c2"></div>
+              <div id="range6c3" class="checkcolor range6c3"></div>
+              <div id="range6c4" class="checkcolor range6c4"></div>
+            </div>
+            <div class="verifyrange">
+              <div id="range7c1" class="checkcolor range7c1"></div>
+              <div id="range7c2" class="checkcolor range7c2"></div>
+              <div id="range7c3" class="checkcolor range7c3"></div>
+              <div id="range7c4" class="checkcolor range7c4"></div>
+            </div>
+            <div class="verifyrange">
+              <div id="range8c1" class="checkcolor range8c1"></div>
+              <div id="range8c2" class="checkcolor range8c2"></div>
+              <div id="range8c3" class="checkcolor range8c3"></div>
+              <div id="range8c4" class="checkcolor range8c4"></div>
+            </div>
+            <div class="verifyrange">
+              <div id="range9c1" class="checkcolor range9c1"></div>
+              <div id="range9c2" class="checkcolor range9c2"></div>
+              <div id="range9c3" class="checkcolor range9c3"></div>
+              <div id="range9c4" class="checkcolor range9c4"></div>
+            </div>
+            <div class="verifyrange">
+              <div id="range10c1" class="checkcolor range10c1"></div>
+              <div id="range10c2" class="checkcolor range10c2"></div>
+              <div id="range10c3" class="checkcolor range10c3"></div>
+              <div id="range10c4" class="checkcolor range10c4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

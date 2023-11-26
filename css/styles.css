@@ -1,0 +1,548 @@
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 0.5em;
+    position: absolute;
+  }
+}
+
+/* pagina principal */
+
+body {
+  background-image: url(/img/istockphoto-1352121455-170667a.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+@font-face {
+  font-family: "Minecraft";
+  src: url("/font/Minecraft.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#container {
+  width: 45em;
+  height: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.box {
+  width: 60em;
+  height: 30em;
+}
+#title {
+  font-family: "Minecraft";
+  font-size: 10em;
+  color: rgb(255, 238, 0);
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+.options {
+  width: 45em;
+  height: 10em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#play {
+  height: 1.5em;
+  width: 5em;
+  color: white;
+  font-size: 6em;
+  font-family: "Minecraft";
+}
+#play:hover {
+  text-shadow: #fc0 1px 0 10px;
+  cursor: pointer;
+}
+#play:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+#rules {
+  height: 0.5em;
+  width: 5em;
+  color: white;
+  font-size: 3em;
+  font-family: "Minecraft";
+}
+#rules:hover {
+  text-shadow: #fc0 1px 0 10px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+/* nombre de usuario */
+
+.contain-user {
+  width: 100vw;
+  height: 25em;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  flex-direction: column;
+}
+.title-username {
+  font-family: "Minecraft";
+  font-size: 8em;
+  color: rgb(255, 238, 0);
+  margin-bottom: 0;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-box {
+  height: 18em;
+  width: 35em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.input {
+  margin-top: 0;
+  padding-top: 0;
+  width: 6em;
+  font-size: 3em;
+  text-align: center;
+  font-family: "Minecraft";
+}
+.box-text {
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nickname {
+  text-align: center;
+  font-size: 3em;
+  height: 1.5em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-family: "Minecraft";
+  color: rgb(0, 0, 0);
+}
+.button-username {
+  height: 2em;
+  width: 3em;
+  font-family: "Minecraft";
+  font-size: 2.1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-username:hover {
+  text-shadow: #fc0 1px 0 10px;
+  cursor: pointer;
+}
+.button-username:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+.play-button {
+  color: beige;
+  font-size: 1.5em;
+  height: 0em;
+}
+
+/* niveles */
+
+.contain-level {
+  text-align: center;
+  flex-direction: column;
+}
+h2 {
+  font-family: "Minecraft";
+  font-size: 5em;
+  color: rgb(255, 238, 0);
+  margin-bottom: 0;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.difficulty-btn {
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.difficulty-btn:hover {
+  transform: scale(1.1);
+}
+.back-btn {
+  height: 3em;
+  font-family: "Minecraft";
+  font-size: 3em;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+}
+.back-btn:hover {
+  text-shadow: #fc0 1px 0 10px;
+  cursor: pointer;
+}
+.back-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+/* colores */
+
+.container-colors {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color-picker {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin: -60px;
+  cursor: pointer;
+}
+.color-select {
+  height: 4em;
+  width: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.submit-btn {
+  height: 5em;
+  width: 3em;
+  font-family: "Minecraft";
+  font-size: 2.1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+}
+.submit-btn:hover {
+  text-shadow: #fc0 1px 0 10px;
+  cursor: pointer;
+}
+.submit-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+/* reglas */
+
+#rulescontainer {
+  height: 15em;
+  width: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#titlerules {
+  font-family: "Minecraft";
+  font-size: 7em;
+  color: rgb(255, 238, 0);
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+.gamerules {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5em;
+}
+.boxrules {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: auto;
+  width: auto;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  color: bisque;
+}
+.buttonsrules {
+  width: 100vw;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10em;
+  text-align: center;
+}
+.play-rules {
+  height: 1.5em;
+  width: 4em;
+  color: beige;
+  font-size: 2.5em;
+  font-family: "Minecraft";
+}
+.play-rules:hover {
+  text-shadow: #fc0 1px 0 10px;
+  cursor: pointer;
+}
+.play-rules:active {
+  transform: translate(4px, 4px);
+}
+.backhome {
+  height: 1.5em;
+  width: 4em;
+  color: beige;
+  font-size: 2.5em;
+  font-family: "Minecraft";
+}
+.backhome:hover {
+  text-shadow: #fc0 1px 0 10px;
+  cursor: pointer;
+}
+.backhome:active {
+  transform: translate(4px, 4px);
+}
+
+/* Mastermind */
+
+.mastermindbox {
+  height: 42em;
+  width: 80em;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 4fr 1fr 1.2fr 2.5fr;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.mastermindbox-indi {
+  width: 39vw;
+  height: 77vh;
+  background-color: rgba(133, 163, 175, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.savedColors {
+  width: 38vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#selectedColor1,
+#selectedColor2,
+#selectedColor3,
+#selectedColor4 {
+  width: 6vw;
+  height: 12vh;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
+  margin: 2%;
+}
+#selectedcolorstitle {
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  width: 9vw;
+  margin-left: 3%;
+  font-family: "Minecraft";
+}
+.buttoncheck {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 10vw;
+  height: 25vh;
+  margin-top: -10%;
+  align-items: center;
+  color: beige;
+  font-size: 2.5em;
+  font-family: "Minecraft";
+}
+.buttoncheck:hover {
+  text-shadow: #fc0 1px 0 10px;
+  cursor: pointer;
+}
+.buttoncheck:active {
+  transform: translate(4px, 4px);
+}
+.number {
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  margin: 0;
+  margin-right: -15px;
+  font-family: "Minecraft";
+  font-size: 2.2em;
+  text-align: start;
+  justify-content: flex-end;
+}
+.boxplayer {
+  width: 15em;
+  height: 37em;
+  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+.gamemid {
+  height: 3em;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 12px;
+}
+.boxverify {
+  height: 3.5em;
+  width: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.val {
+  height: 3em;
+  width: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 5px;
+  padding-left: 5px;
+  box-shadow: 0px 0px 5px 2px rgb(255, 255, 255);
+}
+.itemCheck {
+  height: 1em;
+  width: 1em;
+  border: 0.1em solid black;
+  background-color: rgb(168, 168, 168);
+  align-items: center;
+  box-shadow: 0px 0px 5px 1px black;
+}
+.gameright {
+  width: 10em;
+  height: 37em;
+  margin-bottom: 2em;
+  margin-top: -37.7em;
+  margin-left: 17em;
+}
+.boxverifyright {
+  width: 20em;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.verifyrange {
+  height: 3.3em;
+  width: 100%;
+  border: 0.1em solid rgb(0, 0, 0);
+  background-color: rgba(133, 163, 175, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-left: 30px;
+}
+.checkcolor {
+  height: 2.5em;
+  width: 2.5em;
+  border: 0.2em solid black;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 0px 3px rgb(168, 168, 168);
+}
+
+/* ganador y perdedor */
+
+.cont-result {
+  height: 15em;
+  width: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titleWinLose {
+  font-family: "Minecraft";
+  font-size: 7em;
+  color: rgb(255, 238, 0);
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+.imagewin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  width: 40vw;
+}
+.newplay {
+  font-size: 2em;
+  height: 1.5em;
+  padding-bottom: 50px;
+  font-family: "Minecraft";
+  color: rgb(0, 0, 0);
+}
+.buttonagain {
+  width: 100vw;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.yesnew {
+  height: 1.5em;
+  width: 4em;
+  color: beige;
+  font-size: 2.5em;
+  font-family: "Minecraft";
+}
+.yesnew:hover {
+  text-shadow: #fc0 1px 0 10px;
+  cursor: pointer;
+}
+.yesnew:active {
+  transform: translate(4px, 4px);
+}
+.nonew {
+  height: 1.5em;
+  width: 4em;
+  color: beige;
+  font-size: 2.5em;
+  font-family: "Minecraft";
+}
+.nonew:hover {
+  text-shadow: #fc0 1px 0 10px;
+  cursor: pointer;
+}
+.nonew:active {
+  transform: translate(4px, 4px);
+}
